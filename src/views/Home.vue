@@ -1,18 +1,46 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Slider />
+    <SmallBaner />
+    <ProductArea />
+    <MidiumBanner />
+    <MostPopular />
+    <ShopHomeList />
+    <CownDown />
+    <ShopBlog />
+    <ShopService />
+    <Newsletter />
+    <Modal />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Slider from "@/components/Home/Slider";
+import SmallBaner from "@/components/Home/SmallBanner";
+import ProductArea from "@/components/Home/ProductArea";
+import MidiumBanner from "@/components/Home/MidiumBanner";
+import MostPopular from "@/components/Home/MostPopular";
+import ShopHomeList from "@/components/Home/ShopHomeList";
+import CownDown from "@/components/Home/CownDown";
+import ShopBlog from "@/components/Home/ShopBlog";
+import ShopService from "@/components/Home/ShopService";
+import Newsletter from "@/components/Home/Newsletter";
+import Modal from "@/components/Home/Modal";
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    Slider,
+    SmallBaner,
+    ProductArea,
+    MidiumBanner,
+    MostPopular,
+    ShopHomeList,
+    CownDown,
+    ShopBlog,
+    ShopService,
+    Newsletter,
+    Modal,
+  },
+};
 </script>
